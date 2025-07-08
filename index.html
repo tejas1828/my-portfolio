@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tejas - Developer Portfolio</title>
+    <!-- Font Awesome Free CDN for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: rgb(9, 39, 81);
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(7, 102, 119);
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover {
+            color: rgb(158, 158, 199);
+            font-size: 1.01rem;
+        }
+        .left {
+            font-size: 1.5rem;
+        }
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 80px 0;
+        }
+        .firstsection > div {
+            width: 30%;
+        }
+        .leftsection {
+            font-size: 3rem;
+            font-style: oblique;
+            font-variant: inherit;
+            color: rgba(71, 212, 90, 0.758);
+        }
+        .leftsection div {
+            font-style: normal;
+            color: azure;
+        }
+        .rightsection img {
+            width: 80%;
+            margin: 50px;
+        }
+        #element {
+            color: azure;
+        }
+        /* Social Media Section */
+        .social-icons {
+            text-align: center;
+            padding: 20px;
+        }
+        .social-icons a {
+            margin: 0 15px;
+            font-size: 2rem;
+            transition: transform 0.3s ease;
+        }
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+        .social-icons .fa-instagram {
+            color: #E4405F;
+        }
+        .social-icons .fa-linkedin {
+            color: #0077B5;
+        }
+
+        /* ✅ Responsive Mobile Styles */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                height: auto;
+                padding: 15px 0;
+            }
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+            .firstsection {
+                flex-direction: column;
+                text-align: center;
+                margin: 40px 0;
+            }
+            .firstsection > div {
+                width: 90%;
+            }
+            .leftsection {
+                font-size: 2rem;
+            }
+            .rightsection img {
+                width: 70%;
+                margin: 20px auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Tejas's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skill.html">Skills</a></li>
+                    <li><a href="project.html">Project</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                <h2>Hi, I'm Tejas</h2>
+                <div>And I am a passionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="bg1.png" alt="Developer Image">
+            </div>
+        </section>
+    </main>
+
+    <!-- Social Media Icons -->
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/_tejas__1828_?igsh=MXhrd2NqZnA5dW50MQ==" target="_blank" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/tejas-khandekar-89a993333?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer..'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+</html>
